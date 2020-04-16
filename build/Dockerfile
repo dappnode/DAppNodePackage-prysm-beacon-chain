@@ -17,7 +17,7 @@ COPY --from=binary /usr/local/bin/beacon-chain /usr/local/bin/beacon-chain
 RUN apt update && \
     apt install -y ca-certificates && \
     rm -rf /var/lib/apt/lists/*
+
+ADD ssl /ssl/
     
-ENTRYPOINT [ "sh", "-c", "exec beacon-chain --datadir=/data --log-file=/data/beacon-chain.log --web3provider=$WEB3PROVIDER $EXTRA_OPTS" ]
-
-
+ENTRYPOINT [ "sh", "-c", "exec beacon-chain --datadir=/data --log-file=/data/beacon-chain.log --web3provider=$WEB3PROVIDER --tls-key=/ssl/ssl-private.key --tls-cert=/ssl/ssl.crt $EXTRA_OPTS" ]
