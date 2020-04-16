@@ -16,11 +16,11 @@
     "link": "http://my.dappnode/#/sdk/publish/r=prysm-beacon-chain.public.dappnode.eth&v=1.0.2&h=%2Fipfs%2FQmQfg22EnJnaufz4Cgg6tmAJv7sRM8Di1tAoX6SE61PPFs"
   },
   "1.0.3": {
-    "hash": "/ipfs/QmUMz9KNr6NtYUhmAP21oCHK6Jvw6977Kg3ezADrRnC729",
+    "hash": "/ipfs/QmeA84AP8j5VqRF3KtaMBwkdcc5kmGtPmR8hr2V4gdURLL",
     "type": "directory",
     "uploadedTo": {
-      "remote": "Thu, 16 Apr 2020 19:39:42 GMT"
+      "remote": "Thu, 16 Apr 2020 20:09:18 GMT"
     },
-    "link": "http://my.dappnode/#/sdk/publish/r=prysm-beacon-chain.public.dappnode.eth&v=1.0.3&h=%2Fipfs%2FQmUMz9KNr6NtYUhmAP21oCHK6Jvw6977Kg3ezADrRnC729"
+    "link": "http://my.dappnode/#/sdk/publish/r=prysm-beacon-chain.public.dappnode.eth&v=1.0.3&h=%2Fipfs%2FQmeA84AP8j5VqRF3KtaMBwkdcc5kmGtPmR8hr2V4gdURLL"
   }
 }
