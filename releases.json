@@ -14,5 +14,13 @@
       "remote": "Thu, 16 Apr 2020 19:08:44 GMT"
     },
     "link": "http://my.dappnode/#/sdk/publish/r=prysm-beacon-chain.public.dappnode.eth&v=1.0.2&h=%2Fipfs%2FQmQfg22EnJnaufz4Cgg6tmAJv7sRM8Di1tAoX6SE61PPFs"
+  },
+  "1.0.3": {
+    "hash": "/ipfs/QmUMz9KNr6NtYUhmAP21oCHK6Jvw6977Kg3ezADrRnC729",
+    "type": "directory",
+    "uploadedTo": {
+      "remote": "Thu, 16 Apr 2020 19:39:42 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=prysm-beacon-chain.public.dappnode.eth&v=1.0.3&h=%2Fipfs%2FQmUMz9KNr6NtYUhmAP21oCHK6Jvw6977Kg3ezADrRnC729"
   }
 }
