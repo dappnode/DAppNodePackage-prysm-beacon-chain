@@ -32,8 +32,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: | 
           RELEASE_ID=$(curl https://api.github.com/repos/${{ github.repository }}/releases/tags/${{ steps.dispatch-event.outputs.TAG }} | jq .id || echo "") 
-          echo $RELEASE_ID
-          if [ ! -z "$RELEASE_ID" ];then
+          PRE_RELEASE=$(curl -s https://api.github.com/repos/dappnode/DAppNodePackage-prysm-beacon-chain/releases/latest | jq .prerelease)
+          if [ $PRE_RELEASE == "false" ];then
+            exit 1
+          elif [ ! -z "$RELEASE_ID" ];then
             curl -H "Authorization: token ${GITHUB_TOKEN}" -X DELETE https://api.github.com/repos/${{ github.repository }}/releases/${RELEASE_ID}
           fi
 
