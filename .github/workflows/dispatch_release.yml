@@ -14,13 +14,12 @@ jobs:
           echo "Event '${{ github.event.action }}' with tag: '${{ github.event.client_payload.tag }}'"
           echo "::set-output name=TAG::${{ github.event.client_payload.tag }}"
           echo VERSION=${{ github.event.client_payload.tag }} > .env
-          echo -e $(curl -s https://api.github.com/repos/prysmaticlabs/prysm/releases/latest | jq .body | tr -d "\"") > changelog.txt
-          echo ::set-output name=ORIGINAL_CHANGELOG::$(cat changelog.txt)
       
       - name: Setup nodejs
         uses: actions/setup-node@v1
         with:
           node-version: '10.x'
+
       - name: dappnodesdk install
         run: npm install -g @dappnode/dappnodesdk
         
@@ -30,7 +29,7 @@ jobs:
         
       - name: Check and delete if a release already exists
         env:
-          GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: | 
           RELEASE_ID=$(curl https://api.github.com/repos/${{ github.repository }}/releases/tags/${{ steps.dispatch-event.outputs.TAG }} | jq .id || echo "") 
           echo $RELEASE_ID
@@ -54,22 +53,20 @@ jobs:
         id: create_release
         uses: actions/create-release@latest
         env:
-          GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
           release_name: v${{ steps.next-release.outputs.DNP_VERSION }}
           tag_name: ${{ steps.dispatch-event.outputs.TAG }}
           body: |
             # ${{ steps.dispatch-event.outputs.TAG }}
             You can execute a transaction to publish this package from the Admin UI with Metamask by following this pre-filled [link](http://my.dappnode/#/sdk/publish/r=${{ steps.dappnodesdk-publish.outputs.PACKAGE_NAME }}&v=${{ steps.next-release.outputs.DNP_VERSION }}&h=${{ steps.dappnodesdk-publish.outputs.CONTENT_HASH }})
-            Changes in this Release:
-            ${{ steps.dispatch-event.outputs.ORIGINAL_CHANGELOG }}
           draft: false
           prerelease: true
 
       - name: Upload release .xz file
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
           asset_path: ./build_${{ steps.next-release.outputs.DNP_VERSION }}/${{ steps.dappnodesdk-publish.outputs.PACKAGE_NAME }}_${{ steps.next-release.outputs.DNP_VERSION }}.tar.xz
@@ -79,7 +76,7 @@ jobs:
       - name: Upload release avatar file
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
           asset_path: ./build_${{ steps.next-release.outputs.DNP_VERSION }}/avatar.png
@@ -89,7 +86,7 @@ jobs:
       - name: Upload release dappnode_package.json file
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
           asset_path: ./build_${{ steps.next-release.outputs.DNP_VERSION }}/dappnode_package.json
@@ -99,7 +96,7 @@ jobs:
       - name: Upload release docker-compose.yml file
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
           asset_path: ./build_${{ steps.next-release.outputs.DNP_VERSION }}/docker-compose.yml
