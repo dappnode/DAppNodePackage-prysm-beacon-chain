@@ -1,10 +1,10 @@
 {
   "1.0.1": {
-    "hash": "/ipfs/QmQ6L8B9DdR1Pkwgho8vBwJjiDTijBndEXHNqjzdEZKXts",
+    "hash": "/ipfs/QmcVstNKpWtBRf7tPS5q5pHmfWrDwAjdQSQAWPSxZ9LTku",
     "type": "directory",
     "uploadedTo": {
-      "remote": "Thu, 16 Apr 2020 10:17:48 GMT"
+      "remote": "Thu, 16 Apr 2020 10:41:17 GMT"
     },
-    "link": "http://my.dappnode/#/sdk/publish/r=prysm-beacon-chain.public.dappnode.eth&v=1.0.1&h=%2Fipfs%2FQmQ6L8B9DdR1Pkwgho8vBwJjiDTijBndEXHNqjzdEZKXts"
+    "link": "http://my.dappnode/#/sdk/publish/r=prysm-beacon-chain.public.dappnode.eth&v=1.0.1&h=%2Fipfs%2FQmcVstNKpWtBRf7tPS5q5pHmfWrDwAjdQSQAWPSxZ9LTku"
   }
 }
