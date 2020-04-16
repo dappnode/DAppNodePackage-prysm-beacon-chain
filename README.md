@@ -17,9 +17,9 @@
 
 3. Go to [Participate](https://prylabs.net/participate?node=dappnode)
 
-* **Follow** step 1 "Get GöETH — Test ether", as per Prysm's faucet steps.
+* **Follow** Step 1 "Get GöETH — Test ether", as per Prysm's faucet steps.
 
-* **Follow** step 2 Download deposit data (http://my.dappnode/#/packages/prysm-validator.public.dappnode.eth/file-manager?from=%2Fdata%2Fdeposit_data.txt) file and open it, you will get something like this:
+* **Follow** Step 2 [Download deposit data](http://my.dappnode/#/packages/prysm-validator.public.dappnode.eth/file-manager?from=%2Fdata%2Fdeposit_data.txt) file and open it, you will get something like this:
 
         ```
         ========================Deposit Data=======================
