@@ -32,7 +32,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: | 
           RELEASE_ID=$(curl https://api.github.com/repos/${{ github.repository }}/releases/tags/${{ steps.dispatch-event.outputs.TAG }} | jq .id || echo "") 
-          PRE_RELEASE=$(curl -s https://api.github.com/repos/dappnode/DAppNodePackage-prysm-beacon-chain/releases/latest | jq .prerelease)
+          PRE_RELEASE=$(curl -s https://api.github.com/repos/dappnode/DAppNodePackage-prysm-beacon-chain/releases/tags/${{ steps.dispatch-event.outputs.TAG }} | jq .prerelease)
           if [ $PRE_RELEASE == "false" ];then
             exit 1
           elif [ ! -z "$RELEASE_ID" ];then
