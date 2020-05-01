@@ -38,7 +38,12 @@ jobs:
           elif [ ! -z "$RELEASE_ID" ];then
             curl -H "Authorization: token ${GITHUB_TOKEN}" -X DELETE https://api.github.com/repos/${{ github.repository }}/releases/${RELEASE_ID}
           fi
-
+          
+      - name: Sleep for 10 min
+        uses: jakejarvis/wait-action@master
+        with:
+          time: '10m'
+          
       - name: Docker-Compose Build
         run: |
           docker-compose build
