@@ -1,7 +1,7 @@
 version: '3.4'
 services:
   prysm-beacon-chain.public.dappnode.eth:
-    image: 'prysm-beacon-chain.public.dappnode.eth:1.0.7'
+    image: 'prysm-beacon-chain.public.dappnode.eth:1.0.8'
     build:
       context: ./build
       args:
