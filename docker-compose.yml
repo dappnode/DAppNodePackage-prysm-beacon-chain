@@ -12,7 +12,7 @@ services:
       - '4000:4000'
     restart: always
     environment:
-      - 'WEB3PROVIDER=wss://goerli.prylabs.net/websocket'
+      - 'WEB3PROVIDER=ws://goerli-geth.dappnode:8546'
       - EXTRA_OPTS
 volumes:
   data: {}

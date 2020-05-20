@@ -29,5 +29,8 @@
     "readme": "https://github.com/dappnode/DAppNodePackage-prysm-beacon-chain",
     "prysm": "https://prylabs.net",
     "validators": "https://goerli.etherscan.io/address/0x5ca1e00004366ac85f492887aaab12d0e6418876"
+  },
+  "dependencies": {
+    "goerli-geth.dnp.dappnode.eth" : "latest"
   }
 }

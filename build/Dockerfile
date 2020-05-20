@@ -20,4 +20,4 @@ RUN apt update && \
 
 ADD ssl /ssl/
     
-ENTRYPOINT [ "sh", "-c", "exec beacon-chain --datadir=/data --log-file=/data/beacon-chain.log --web3provider=$WEB3PROVIDER --tls-key=/ssl/ssl-private.key --tls-cert=/ssl/ssl.crt $EXTRA_OPTS" ]
+ENTRYPOINT [ "sh", "-c", "exec beacon-chain --datadir=/data --log-file=/data/beacon-chain.log --grpc-gateway-port 4001 --web3provider=$WEB3PROVIDER $EXTRA_OPTS" ]
