@@ -1,8 +1,8 @@
 {
-  "name": "prysm-beacon-chain.public.dappnode.eth",
+  "name": "prysm-onyx-beacon-chain.dnp.dappnode.eth",
   "version": "1.0.12",
   "upstreamVersion": "v1.0.0-alpha.10",
-  "shortDescription": "Prysm ETH2.0 Beacon chain",
+  "shortDescription": "Prysm Onyx ETH2.0 Beacon chain",
   "description": "Prysm: a Go implementation of the Ethereum 2.0 Serenity protocol and open source project created by Prysmatic Labs. Beacon node which powers the beacon chain at the core of Ethereum 2.0",
   "type": "service",
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",

@@ -80,10 +80,10 @@
     "link": "http://my.dappnode/#/sdk/publish/r=prysm-beacon-chain.public.dappnode.eth&v=1.0.11&h=%2Fipfs%2FQmVhyFxZPKxAW6TBiyC4KBr5G7MZbo1qT2nQnjLJEDTxNm"
   },
   "1.0.12": {
-    "hash": "/ipfs/QmYqdzgyzXnnf9aj8KrupdntPaqkWa7ydyrp6TYH9W9y1L",
+    "hash": "/ipfs/QmXoPT5gUNCALqvvkFzVNiLG6MZy7kAmVDSuBmhkeijgVe",
     "type": "directory",
     "uploadedTo": {
-      "remote": "Wed, 10 Jun 2020 04:25:45 GMT"
+      "dappnode": "Wed, 10 Jun 2020 05:41:40 GMT"
     },
     "link": "http://my.dappnode/#/sdk/publish/r=prysm-beacon-chain.public.dappnode.eth&v=1.0.12&h=%2Fipfs%2FQmYqdzgyzXnnf9aj8KrupdntPaqkWa7ydyrp6TYH9W9y1L"
   }
