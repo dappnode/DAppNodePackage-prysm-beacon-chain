@@ -1,35 +1,38 @@
 {
   "1.0.1": {
-    "hash": "/ipfs/QmcVstNKpWtBRf7tPS5q5pHmfWrDwAjdQSQAWPSxZ9LTku",
+    "hash": "/ipfs/QmVSijE4NFt7aiJDP9XnJgpUQSE8Gd81Pg12pJDZzUXZz3",
     "type": "directory",
     "uploadedTo": {
-      "remote": "Thu, 16 Apr 2020 10:41:17 GMT"
+      "dappnode": "Wed, 10 Jun 2020 14:48:23 GMT",
+      "remote": "Wed, 10 Jun 2020 14:56:58 GMT"
     },
-    "link": "http://my.dappnode/#/sdk/publish/r=prysm-beacon-chain.public.dappnode.eth&v=1.0.1&h=%2Fipfs%2FQmcVstNKpWtBRf7tPS5q5pHmfWrDwAjdQSQAWPSxZ9LTku"
+    "link": "http://my.dappnode/#/sdk/publish/r=prysm-onyx-beacon-chain.dnp.dappnode.eth&v=1.0.1&h=%2Fipfs%2FQmVSijE4NFt7aiJDP9XnJgpUQSE8Gd81Pg12pJDZzUXZz3"
   },
   "1.0.2": {
-    "hash": "/ipfs/QmQfg22EnJnaufz4Cgg6tmAJv7sRM8Di1tAoX6SE61PPFs",
+    "hash": "/ipfs/QmcYe6xiJYVjF1qKSGWiFYHxJAw8w4gRXaMdhFZZMmU6kp",
     "type": "directory",
     "uploadedTo": {
-      "remote": "Thu, 16 Apr 2020 19:08:44 GMT"
+      "remote": "Wed, 10 Jun 2020 15:43:41 GMT"
     },
-    "link": "http://my.dappnode/#/sdk/publish/r=prysm-beacon-chain.public.dappnode.eth&v=1.0.2&h=%2Fipfs%2FQmQfg22EnJnaufz4Cgg6tmAJv7sRM8Di1tAoX6SE61PPFs"
+    "link": "http://my.dappnode/#/sdk/publish/r=prysm-onyx-beacon-chain.dnp.dappnode.eth&v=1.0.2&h=%2Fipfs%2FQmcYe6xiJYVjF1qKSGWiFYHxJAw8w4gRXaMdhFZZMmU6kp"
   },
   "1.0.3": {
-    "hash": "/ipfs/QmeA84AP8j5VqRF3KtaMBwkdcc5kmGtPmR8hr2V4gdURLL",
+    "hash": "/ipfs/QmdtsiTshndZbieYGUzk2G4VAE4V4izdsKw2pZFeGaLZ2t",
     "type": "directory",
     "uploadedTo": {
-      "remote": "Thu, 16 Apr 2020 20:09:18 GMT"
+      "remote": "Sat, 13 Jun 2020 06:52:24 GMT",
+      "dappnode": "Sat, 13 Jun 2020 08:12:15 GMT"
     },
-    "link": "http://my.dappnode/#/sdk/publish/r=prysm-beacon-chain.public.dappnode.eth&v=1.0.3&h=%2Fipfs%2FQmeA84AP8j5VqRF3KtaMBwkdcc5kmGtPmR8hr2V4gdURLL"
+    "link": "http://my.dappnode/#/sdk/publish/r=prysm-onyx-beacon-chain.dnp.dappnode.eth&v=1.0.3&h=%2Fipfs%2FQmdtsiTshndZbieYGUzk2G4VAE4V4izdsKw2pZFeGaLZ2t"
   },
   "1.0.4": {
-    "hash": "/ipfs/QmcothqC88gzhU12hvgeME8Ajfm3hAREaxWp1hrA2VeSML",
+    "hash": "/ipfs/QmYbTRWppqndYqf683RQLXMAoDuu9QkAX76BSB8oStYgUU",
     "type": "directory",
     "uploadedTo": {
-      "remote": "Fri, 17 Apr 2020 06:54:50 GMT"
+      "dappnode": "Sat, 13 Jun 2020 08:17:05 GMT",
+      "remote": "Sat, 13 Jun 2020 08:17:19 GMT"
     },
-    "link": "http://my.dappnode/#/sdk/publish/r=prysm-beacon-chain.public.dappnode.eth&v=1.0.4&h=%2Fipfs%2FQmcothqC88gzhU12hvgeME8Ajfm3hAREaxWp1hrA2VeSML"
+    "link": "http://my.dappnode/#/sdk/publish/r=prysm-onyx-beacon-chain.dnp.dappnode.eth&v=1.0.4&h=%2Fipfs%2FQmYbTRWppqndYqf683RQLXMAoDuu9QkAX76BSB8oStYgUU"
   },
   "1.0.5": {
     "hash": "/ipfs/QmXASBTpRuBYgrSf7DbqAPBLiryBJFwUNDLvaP2LcGV3fY",
@@ -80,11 +83,20 @@
     "link": "http://my.dappnode/#/sdk/publish/r=prysm-beacon-chain.public.dappnode.eth&v=1.0.11&h=%2Fipfs%2FQmVhyFxZPKxAW6TBiyC4KBr5G7MZbo1qT2nQnjLJEDTxNm"
   },
   "1.0.12": {
-    "hash": "/ipfs/QmWYksLvx9hE1LfhTTRd5hYdPA1cVCCrQjo4AsY6AQBJm3",
+    "hash": "/ipfs/QmXoPT5gUNCALqvvkFzVNiLG6MZy7kAmVDSuBmhkeijgVe",
     "type": "directory",
     "uploadedTo": {
-      "remote": "Fri, 12 Jun 2020 19:59:02 GMT"
+      "dappnode": "Wed, 10 Jun 2020 05:41:40 GMT",
+      "remote": "Wed, 10 Jun 2020 05:49:03 GMT"
     },
-    "link": "http://my.dappnode/#/sdk/publish/r=prysm-beacon-chain.public.dappnode.eth&v=1.0.12&h=%2Fipfs%2FQmWYksLvx9hE1LfhTTRd5hYdPA1cVCCrQjo4AsY6AQBJm3"
+    "link": "http://my.dappnode/#/sdk/publish/r=prysm-onyx-beacon-chain.dnp.dappnode.eth&v=1.0.12&h=%2Fipfs%2FQmXoPT5gUNCALqvvkFzVNiLG6MZy7kAmVDSuBmhkeijgVe&d=0xF35960302a07022aBa880DFFaEC2Fdd64d5BF1c1"
+  },
+  "1.0.0": {
+    "hash": "/ipfs/QmWsP1yeekXBuhCuTRBEfgJAcR2AtLmZW9m3WLGGMGJGqf",
+    "type": "directory",
+    "uploadedTo": {
+      "remote": "Wed, 10 Jun 2020 05:51:30 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=prysm-onyx-beacon-chain.dnp.dappnode.eth&v=1.0.0&h=%2Fipfs%2FQmWsP1yeekXBuhCuTRBEfgJAcR2AtLmZW9m3WLGGMGJGqf&d=0xF35960302a07022aBa880DFFaEC2Fdd64d5BF1c1"
   }
 }
