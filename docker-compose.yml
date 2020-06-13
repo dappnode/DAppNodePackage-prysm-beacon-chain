@@ -1,7 +1,7 @@
 version: '3.4'
 services:
   prysm-onyx-beacon-chain.dnp.dappnode.eth:
-    image: 'prysm-onyx-beacon-chain.dnp.dappnode.eth:1.0.5'
+    image: 'prysm-onyx-beacon-chain.dnp.dappnode.eth:1.0.6'
     build:
       context: ./build
       args:
