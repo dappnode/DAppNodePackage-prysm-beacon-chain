@@ -43,12 +43,13 @@
     "link": "http://my.dappnode/#/sdk/publish/r=prysm-onyx-beacon-chain.dnp.dappnode.eth&v=1.0.5&h=%2Fipfs%2FQmVryyh676pZRxJ2h149pdcGGyw2D2ezQie3e713dKgUR2"
   },
   "1.0.6": {
-    "hash": "/ipfs/QmTnK6nWTQnR516MPhx9WYSmLyKknxEFiRHFVaL2av46gD",
+    "hash": "/ipfs/QmRyRWU6jAeRoGdjrjYLVTPMDe4DPwmX61xAp6u3yKopuX",
     "type": "directory",
     "uploadedTo": {
-      "remote": "Wed, 22 Apr 2020 13:42:21 GMT"
+      "dappnode": "Mon, 15 Jun 2020 15:42:01 GMT",
+      "remote": "Mon, 15 Jun 2020 16:16:56 GMT"
     },
-    "link": "http://my.dappnode/#/sdk/publish/r=prysm-beacon-chain.public.dappnode.eth&v=1.0.6&h=%2Fipfs%2FQmTnK6nWTQnR516MPhx9WYSmLyKknxEFiRHFVaL2av46gD"
+    "link": "http://my.dappnode/#/sdk/publish/r=prysm-onyx-beacon-chain.dnp.dappnode.eth&v=1.0.6&h=%2Fipfs%2FQmRyRWU6jAeRoGdjrjYLVTPMDe4DPwmX61xAp6u3yKopuX"
   },
   "1.0.7": {
     "hash": "/ipfs/QmZFRs8UQwhEsGqhVRFN5j99JdzW3CmtQp1ht2AwnR9NTe",
