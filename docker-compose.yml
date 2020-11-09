@@ -1,18 +1,18 @@
-version: '3.4'
+version: "3.4"
 services:
   prysm-onyx-beacon-chain.dnp.dappnode.eth:
-    image: 'prysm-onyx-beacon-chain.dnp.dappnode.eth:1.0.8'
+    image: "prysm-onyx-beacon-chain.dnp.dappnode.eth:1.0.8"
     build:
       context: ./build
       args:
         - VERSION
     volumes:
-      - 'data:/data'
+      - "data:/data"
     ports:
-      - '13000'
+      - "13000"
     restart: always
     environment:
-      - 'HTTP_WEB3PROVIDER=http://goerli-geth.dappnode:8545'
+      - "HTTP_WEB3PROVIDER=http://goerli-geth.dappnode:8545"
       - EXTRA_OPTS
 volumes:
   data: {}
